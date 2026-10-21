@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra-Bugs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Quebra-Bugs</h1>
+            <p class="slogan">Uma aventura pelo universo da tecnologia</p>
+            <p class="missao">Quebre os blocos. Elimine os bugs e os vírus!</p>
+        </header>
+
+        <section class="painel" aria-label="Placar">
+            <p>Pontos: <strong id="pontos">0</strong></p>
+            <p>Vidas: <strong id="vidas">&#1008;&#1008;&#1008</p>
+            <p>Fase <strong id="fase">1</strong></p>
+            <p>Recorde <strong id="recorde">0</strong></p>
+        </section>
+
+        <p id="aviso" class="aviso" aria-live="polite">
+            Use a plataforma para rebater a bola e destruir os blocos.
+        </p>
+
+        <div class="arena">
+            <canvas id="jogo" width="800" height="520" aria-label="Área do jogo Quebra-Bugs"></canvas>
+            <div id="tela" class="tela">
+                <div class="cartao">
+                    <p id="mensagem">Bom-vindo ao Quebra-Bugs! Prepare-se para eliminar os bugs e os vírus e restaurar o sistema.</p>
+                    <button id="botao" type="button">Começar</button>
+                </div>
+            </div>
+        </div>
+
+        <audio id="musica" src="quebra-bug.mp3" loop reload="auto"></audio>
+
+        <ul id="legenda" class="legenda" aria-label="Tipos de bloco"></ul>
+
+        <p class="controles">Setas, A e D, mouse ou o dedo movem a plataforma.</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
